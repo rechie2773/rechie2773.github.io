@@ -12,7 +12,8 @@
             <div class="avatar">
                 <img src="image.png" alt="Ảnh đại diện">
             </div>
-            <h1>Đinh Lê Huy</h1>
+            <h1 id="name">Đinh Lê Huy</h1>
+            <button onclick="changeColor()">Đổi màu</button>
             <p class="title">Frontend Developer</p>
             
             <div class="info">
@@ -39,5 +40,12 @@
             </div>
         </div>
     </div>
+    <script>
+        function changeColor() {
+            const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.getElementById('name').style.color = randomColor;
+        }
+    </script>
 </body>
 </html>
