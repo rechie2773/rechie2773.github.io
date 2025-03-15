@@ -11,7 +11,45 @@
         <div class="profile">
             <div class="avatar">
                 <img src="image.png" alt="Ảnh đại diện">
+<<<<<<< HEAD
+=======
+            </div>
+            <h1 id="name">Đinh Lê Huy đep trai</h1>
+            <button onclick="changeColor()">Đổi màu</button>
+            <p class="title">Frontend Developer</p>
+            
+            <div class="info">
+                <h2>Thông tin cá nhân</h2>
+                <div class="info-item">
+                    <i class="icon">📅</i>
+                    <span>Sinh năm: 2003</span>
+                </div>
+                <div class="info-item">
+                    <i class="icon">📱</i>
+                    <span>Điện thoại: 0916325107</span>
+                </div>
+                <div class="info-item">
+                    <i class="icon">📧</i>
+                    <span>Email: huyz@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="social">
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Steam </a>
+                <a href="#" class="social-link">INS </a>
+            </div>
+>>>>>>> 7a2e469b3f489102cde696f8ed521ec622e4eeed
         </div>
     </div>
+    <script>
+        function changeColor() {
+            const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.getElementById('name').style.color = randomColor;
+        }
+    </script>
 </body>
 </html>
